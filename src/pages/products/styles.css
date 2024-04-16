@@ -1,0 +1,168 @@
+.card-bags {
+    padding: 1rem 1rem;
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(26, 24, 24, 0.3);
+}
+
+
+  
+ 
+
+  @media screen and (max-width:470px) {
+    .btns a {
+        text-decoration: none;
+        color: orangered;
+        width: 100%;
+        padding: 0.5rem 1rem!important;
+        border: 1px solid orangered;
+    }
+    .flexc{
+        flex-direction: column;
+    }
+    .mt55{
+        margin-top: 52px;
+    }
+  }
+  @media screen and (max-width:370px) {
+    .btns a {
+        text-decoration: none;
+        color: orangered;
+        width: 100%;
+        padding: 0.5rem!important;
+        border: 1px solid orangered;
+    }
+    .top-products{
+        padding: 0.4rem 1rem!important;
+    }
+    .flexc{
+        flex-direction: column;
+    }
+    .mt55{
+        margin-top: 52px;
+    }
+  }
+.top-products{
+    padding: 0.4rem 3rem;
+}
+.img {
+    width: 80%;
+    height: 80%;
+
+}
+
+.tag {
+    position: absolute;
+    background-color: orangered;
+    color: #fff;
+    z-index: 999;
+    padding: 0.3rem 4rem;
+    top: 10px;
+    left: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.bg{
+    background-color: white;
+}
+a:hover{
+    color: black;
+}
+.bread{
+    text-align: center;
+    display: flex;
+    padding-left: 3rem;
+    align-items: start;
+    justify-content: start;
+}
+.bg-secondarys{
+    margin-top: 4px;
+    padding-top: 1rem;
+    background-color: rgba(128, 128, 128, 0.444);
+}
+.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.2s ease-in-out;
+}
+.img img:hover{
+    transform: scale(1.03);
+}
+
+.number-review {
+    color: rgba(128, 128, 128, 0.589);
+}
+.prices{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.btns {
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.info h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.btns a {
+    text-decoration: none;
+    color: orangered;
+    width: 100%;
+    padding: 0.5rem 4rem;
+    border: 1px solid orangered;
+}
+.btnss a {
+    
+    padding: 0.9rem 10rem;
+}
+.o a {
+    width: 100%;
+    background-color: orangered!important;
+    color: black;
+}
+
+.btns{
+    animation:  horizontal-shaking 0.5s ease-in-out;
+
+}
+@keyframes horizonta {
+    0% { transform: translateX(0) }
+    25% { transform: translateX(5px) }
+    50% { transform: translateX(-5px) }
+    75% { transform: translateX(5px) }
+    100% { transform: translateX(0) }
+   }
+
+   .btns:hover{
+    animation:  horizonta 0.3s ease-in-out;
+
+}
+
+@media screen and (max-width:768px) {
+    .img {
+        width: 100%;
+        height: 50%;
+    
+    }
+}
